@@ -1,4 +1,4 @@
-package chapter03;
+package field;
 
 import person.Student;
 

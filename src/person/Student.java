@@ -6,5 +6,10 @@ public class Student {
 		protected String name;
 		 String studentNumber;
 		public String major;
+		
+		static int a=0;
+		static void show(int a) {
+			System.out.println(a);
+		}
 
 }
