@@ -9,10 +9,25 @@ public class Song {
 	private int year;
 	private int track;
 	
-	Song() {
-		System.out.println("I'm songtest");
+	
+	
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+
 	}
 	
+	public Song() { //생성자 오버로딩
+		System.out.println("\nI'm Song Class Constructor!");
+	}
+	public Song(String title, String artist) { //this로 생성자 호출
+		this(title, artist, null, null, 0,0);
+	}
+
 	public String getTitle() {
 		return title;
 	}
