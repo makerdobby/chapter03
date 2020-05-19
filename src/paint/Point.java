@@ -29,6 +29,7 @@ public class Point {
 	}
 	
 	public void show(boolean visible) {
+		
 		if(visible) {
 			// System.out.println("점 [x="+x+", y="+y+"]을 그렸습니다.");
 			// 이것도 코드 재사용
