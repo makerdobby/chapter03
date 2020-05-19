@@ -22,20 +22,28 @@ public class Point {
 		this.y = y;
 	}
 	
+	
 	public void show() {
 		System.out.println("점 [x="+x+", y="+y+"]을 그렸습니다.");
 		
 	}
 	
-	public void show(boolean visil) {
-		System.out.println("점 [x="+x+", y="+y+"]을 그렸습니다.");
+	public void show(boolean visible) {
+		if(visible) {
+			// System.out.println("점 [x="+x+", y="+y+"]을 그렸습니다.");
+			// 이것도 코드 재사용
+			show();
+		}
+		else {
+			System.out.println("점 [x="+x+", y="+y+"]을 지웠습니다.");
+		}
 		
 	}
-	
+	/*
 	public void disappear() {
 		System.out.println("점 [x="+x+", y="+y+"]을 지웠습니다.");
 	}
-	
+	*/
 	
 
 }
